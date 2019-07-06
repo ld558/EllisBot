@@ -27,7 +27,7 @@ else:
 
 
 
-for post in subreddit.new(limit=1):
+for post in subreddit.hot(limit=5):
     post.comments.replace_more(limit=None)
     i = 0
     for comment in post.comments.list():
