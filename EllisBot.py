@@ -20,7 +20,7 @@ if not os.path.isfile("reddit_usernames_replied_to.txt"):
     usernames_replied_to=[]
 
 else:
-    with open("reddit_usernames_replied_to.txt","r"):
+    with open("reddit_usernames_replied_to.txt","r") as f:
         usernames_replied_to = f.read()
         usernames_replied_to = usernames_replied_to.split("\n")
         usernames_replied_to = list(filter(None, usernames_replied_to))
