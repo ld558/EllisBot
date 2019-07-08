@@ -2,6 +2,7 @@ import praw
 import pdb
 import re
 import os
+os.chdir("/home/vagrant/EllisBot" )
 reddit = praw.Reddit('bot1')
 subreddit=reddit.subreddit("pythonforengineers")
 keyword = '!WEllisBot'
